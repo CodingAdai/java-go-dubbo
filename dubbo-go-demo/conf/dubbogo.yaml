@@ -1,0 +1,11 @@
+dubbo:
+  registries:
+    zookeeper:
+      protocol: zookeeper
+      address: localhost:2181
+  consumer:
+    references:
+      GreeterClientImpl:
+        protocol: tri
+        interface: com.example.springboot3dubbo3.Greeter
+        version: "1.0"
